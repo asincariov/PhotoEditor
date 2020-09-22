@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c8bee01-1098-4a1d-8435-5b4a12f02c79" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hd3Qr077u1EGgyQvEeLUKuthB9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/Work/photopea.com" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\photopea.com\code" />
+      <recent name="D:\xampp\htdocs\photopea.com\fonts\ex\shs" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c8bee01-1098-4a1d-8435-5b4a12f02c79" name="Default Changelist" comment="" />
+      <created>1600327128261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600327128261</updated>
+      <workItem from="1600327129511" duration="4531000" />
+      <workItem from="1600364193987" duration="3043000" />
+      <workItem from="1600492273613" duration="1177000" />
+      <workItem from="1600493470646" duration="5207000" />
+      <workItem from="1600669207704" duration="6257000" />
+      <workItem from="1600675871683" duration="2826000" />
+      <workItem from="1600730839633" duration="2122000" />
+      <workItem from="1600734413508" duration="46000" />
+      <workItem from="1600755632715" duration="69000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="689" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600493319849">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600493319849" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1600675024664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600675024664" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1600734420157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600734420157" />
+    <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1600731000516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="276" width="586" height="488" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600731000516" />
+  </component>
+</project>
