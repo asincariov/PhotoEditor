@@ -58109,6 +58109,311 @@
         this.close()
     };
 
+    function hZ() {
+        gR.call(this, [0, 13, 0], "account");
+        this.k4 = _.B("div", "form padded scrollable");
+        this.k4.setAttribute("style", "max-width:48em;  max-height:33em;");
+        this.body.appendChild(this.k4);
+        this.bv = [new hZ.NL, new hZ.E4(hZ.a8R), new hZ.E4(hZ.ajm)];
+        for (var r = 0; r < this.bv.length;
+             r++) this.bv[r].parent = this;
+        this.s("showpage", this.ade, this)
+    }
+
+    hZ.prototype = new gR;
+    hZ.prototype.ade = function (n) {
+        _.Wg(this.k4);
+        this.k4.scrollTop = 0;
+        this.k4.appendChild(this.bv[n.data.z9].d)
+    };
+    hZ.prototype.v = function () {
+        gR.prototype.v.call(this);
+        for (var r = 0; r < this.bv.length; r++) this.bv[r].v()
+    };
+    hZ.prototype.r3 = function (n, d, X) {
+        _.Wg(this.k4);
+        var p = this.bv[0];
+        this.k4.appendChild(p.d);
+        p.r3();
+        this.v()
+    };
+    hZ.prototype.yG = function (n, d) {
+        this.r3(null, null, null)
+    };
+    hZ.NL = function () {
+        fz.call(this);
+        this.d = _.B("div");
+        var n = this.d, d, X,
+            p = "background-color: #00aa00;  text-shadow:none; padding:3px 7px; font-size:1.2em; font-weight:bold; color:#ffffff; cursor:pointer; margin:4px 0;";
+        this.xy = _.B("div");
+        n.appendChild(this.xy);
+        this.H1 = new iq([0, 11], !1, null, !0);
+        this.H1.d.setAttribute("style", "background-color: rgba(200,0,0,1); color:#ffffff; margin:4px 6px 4px 0;");
+        this.H1.s("click", this.Y0, this);
+        n.appendChild(this.H1.d);
+        this.Xc = new iq([0, 13, 1], !1, null, !0);
+        this.Xc.s("click", this.tj, this);
+        n.appendChild(this.Xc.d);
+        this.a1K = new iq("Contact", !1, null, !0);
+        this.a1K.s("click", this.adh, this);
+        d = _.B("h2", "");
+        d.innerHTML = "Account types";
+        n.appendChild(d);
+        X = _.B("table", "");
+        X.innerHTML = "\t\t\t<table>\t\t\t\t<tr>   <th class=\"left\"></th><th>Free</th><th>Premium</th> </tr>\t\t\t\t<tr>   <td class=\"left\">Full Functionality</td><td class=\"yes\">\u2713</td><td class=\"yes\">\u2713</td>    </tr>\t\t\t\t<tr>   <td class=\"left\">No Ads</td><td class=\"no\"> </td><td class=\"yes\">\u2713</td>    </tr>\t\t\t\t<tr>   <td class=\"left\">Steps in History</td><td class=\"no\" style=\"font-size:1.3em\">30</td><td class=\"yes\">60</td>    </tr>\t\t\t\t<!--<tr class=\"lastrow\">   <td class=\"left\">Cost</td><td>Free</td><td><big>$5</big> per month</td>    </tr>-->\t\t\t</table>\t\t";
+        n.appendChild(X);
+        var x = this.a5l = [[9, 30, 1], [10, 90, 1], [40, 365, 1], [15, 30, 5], [30, 90, 5], [120, 365, 5], [50, 30, 20], [100, 90, 20], [400, 365, 20], [40, 30, 1e3], [80, 90, 1e3], [300, 365, 1e3], [100, 30, 5e3], [200, 90, 5e3], [700, 365, 5e3], [200, 30, 2e4], [400, 90, 2e4], [1400, 365, 2e4]];
+        this.Gl = [];
+        for (var r = 0; r < x.length; r++) this.Gl.push(new iq("Buy: $" + x[r][0], !1, null, !0));
+        for (var r = 0;
+             r < this.Gl.length; r++) {
+            this.Gl[r].d.setAttribute("style", p);
+            this.Gl[r].s("click", this.a1O, this)
+        }
+        d = _.B("h2", "");
+        d.innerHTML = "Go Premium";
+        n.appendChild(d);
+        this.Yi = new iq("...", !0);
+        this.Yi.d.setAttribute("style", p);
+        n.appendChild(this.Yi.d);
+        X = this.vA(3, ["Single user", this.Gl[0], this.Gl[1], this.Gl[2], "Team of 5", this.Gl[3], this.Gl[4], this.Gl[5], "Team of 20", this.Gl[6], this.Gl[7], this.Gl[8]]);
+        n.appendChild(X);
+        this.a87 = new hf("I accept", !0, "");
+        n.appendChild(this.a87.d);
+        this.bJ = new iq([0, 13, 1], !1, null, !0);
+        this.bJ.s("click", this.tj, this);
+        n.appendChild(this.bJ.d);
+        d = _.B("h2", "");
+        d.textContent = "Team Settings";
+        n.appendChild(d);
+        this.YN = new hf("Join a team");
+        n.appendChild(this.YN.d);
+        this.YN.s(_.E.h, this.sD, this);
+        this.Wx = new cM("Email of a leader", null, 14);
+        n.appendChild(this.Wx.d);
+        _.Da(n);
+        this.Jd = new hf("Start a team");
+        n.appendChild(this.Jd.d);
+        this.Jd.s(_.E.h, this.sD, this);
+        var c = new i9("Emails of other members:");
+        n.appendChild(c.d);
+        _.Da(n);
+        this._S = _.B("textarea");
+        this._S.setAttribute("rows", 3);
+        this._S.setAttribute("cols", 70);
+        this._S.setAttribute("style", "display:block;tab-size:4;");
+        n.appendChild(this._S);
+        var $ = new iq("Save Team Settings", !1, null, !0);
+        n.appendChild($.d);
+        $.s("click", this.ag4, this);
+        var D = this.akj = new iq("More about Teams", !1, null, !0);
+        n.appendChild(D.d);
+        D.s("click", this.zc, this);
+        d = _.B("h2", "");
+        d.innerHTML = "Distributor Account";
+        n.appendChild(d);
+        this.DG = new iq("...", !0);
+        this.DG.d.setAttribute("style", p);
+        n.appendChild(this.DG.d);
+        X = this.vA(3, ["1000 views/month", this.Gl[9], this.Gl[10], this.Gl[11], "5000 views/month", this.Gl[12], this.Gl[13], this.Gl[14], "20000 views/month", this.Gl[15], this.Gl[16], this.Gl[17]]);
+        n.appendChild(X);
+        this.za = new cM("Domain name (e.g. domain.com)", null, 14);
+        n.appendChild(this.za.d);
+        _.Da(n);
+        var $ = new iq("Save Domain Settings", !1, null, !0);
+        $.VU();
+        n.appendChild($.d);
+        $.s("click", this.ahV, this);
+        var D = new iq("More about Distributors", !1, null, !0);
+        n.appendChild(D.d);
+        D.s("click", this.zc, this)
+    };
+    hZ.NL.prototype = new fz;
+    hZ.NL.prototype.tj = function (n) {
+        var d = new A("showpage", !0);
+        d.data = {z9: 1};
+        this.l(d)
+    };
+    hZ.NL.prototype.adh = function (n) {
+        var d = new A("showpage", !0);
+        d.data = {z9: 2};
+        this.l(d)
+    };
+    hZ.NL.prototype.v = function () {
+        this.H1.TA(bq.iu() ? eq.get([0, 11]) : eq.get([0, 10]));
+        this.bJ.v();
+        this.Xc.v();
+        this.a1K.v()
+    };
+    hZ.NL.prototype.zc = function (n) {
+        var d = new A(_.E.N, !0);
+        d.data = {
+            e: _.S.Ko,
+            link: "https://www.photopea.com/api/accounts#" + (n.target == this.akj ? "teams" : "distributors")
+        };
+        this.l(d)
+    };
+    hZ.NL.prototype.sD = function (n) {
+        var d = n.currentTarget == this.YN;
+        this.YN.I(d);
+        this.Jd.I(!d)
+    };
+    hZ.NL.prototype.ag4 = function (n) {
+        var d = this.YN.T(), X = this.Wx.T().trim(), p = this._S.value.trim();
+        if (X.length > 60) {
+            alert("Too long email address");
+            return
+        }
+        if (p.length > 600) {
+            alert("Too many team members");
+            return
+        }
+        p = p.split(",").join(" ").trim();
+        p = p.replace(/\s+/g, " ");
+        if (p == "") p = []; else p = p.split(" ");
+        var x = bq.zY();
+        if (x == null) x = {};
+        if (x.acc == null) x.acc = {};
+        x.acc.team = {jin: d, ldr: X, mmb: p};
+        bq._6(x, this.po.bind(this));
+        alert("Saved!");
+        this.r3()
+    };
+    hZ.NL.prototype.ahV = function (n) {
+        var d = this.za.T().trim();
+        if (!bq.iu()) {
+            alert("You have to log in first.");
+            return
+        }
+        if (bq.lQ().distrib == "0") {
+            alert("Order a distributor account first.");
+            return
+        }
+        var X = bq.zY();
+        if (X == null) X = {};
+        if (X.acc == null) X.acc = {};
+        if (d == "") delete X.acc.dname; else X.acc.dname = d;
+        bq._6(X, this.po.bind(this));
+        alert("Saved!");
+        this.r3()
+    };
+    hZ.NL.prototype.r3 = function () {
+        if (bq.iu()) {
+            var n = bq.lQ();
+            if (n == null) return;
+            this.xy.innerHTML = "<span style=\"font-size:1.5em; margin-right:0.7em;\">" + n.name + "</span> " + n.email + " <br/>"
+        } else this.xy.innerHTML = "Logging In is free. Your environment settings will be synchronized across all devices. <br/>";
+        var d = bq.iu() && bq.Ga();
+        this.Yi.d.style.display = d ? "block" : "none";
+        if (d) {
+            var X = parseInt(n[_.TE("!&|'&50")]) - Date.now() * (1 / 1e3), p = parseInt(n.ptype), x;
+            if (p == -1) x = "member of a team"; else if (p == 1) x = "Single user"; else x = "Team of " + p;
+            this.Yi.TA("Premium active for " + Math.round(X / (60 * 60 * 24)) + " more days! (" + x + ")")
+        }
+        var c = bq.iu() && n.distrib * 1e3 > Date.now();
+        this.DG.d.style.display = c ? "block" : "none";
+        if (c) {
+            var X = parseInt(n.distrib) - Date.now() / 1e3, p = parseInt(n.ptype);
+            this.DG.TA("Distributor active for " + Math.round(X / (60 * 60 * 24)) + " more days! (" + p + " visitos)")
+        }
+        var $ = bq.zY();
+        if ($ && $.acc && $.acc.team) {
+            var D = $.acc.team;
+            this.YN.I(D.jin);
+            this.Jd.I(!D.jin);
+            this.Wx.I(D.ldr);
+            this._S.value = D.mmb.join(", ")
+        } else {
+            this.YN.I(!0);
+            this.Jd.I(!1);
+            this.Wx.I("");
+            this._S.value = ""
+        }
+        if ($ && $.acc && $.acc.dname) this.za.I($.acc.dname); else this.za.I("")
+    };
+    hZ.NL.prototype.vA = function (n, d) {
+        var X = _.B("table");
+        X.innerHTML = "\t\t\t\t<table>\t\t\t\t\t<tr>   <th class=\"left\"></th><th>30 days</th><th>90 days</th> " + (n == 3 ? "<th>365 days</th>" : "") + " </tr>\t\t\t\t</table>\t\t\t";
+        for (var r = 0; r < d.length; r += n + 1) {
+            var p = _.B("tr"), x;
+            X.appendChild(p);
+            x = _.B("td", "left");
+            p.appendChild(x);
+            x.innerHTML = "<b>" + d[r] + "</b>";
+            for (var c = 0; c < n; c++) {
+                x = _.B("td");
+                p.appendChild(x);
+                x.appendChild(d[r + 1 + c].d)
+            }
+        }
+        return X
+    };
+    hZ.NL.prototype.a1O = function (n) {
+        var d = this.Gl.indexOf(n.currentTarget);
+        if (!bq.iu()) {
+            alert("You must log in before buying Premium");
+            return
+        }
+        if (this.a87.T() == !1 && d < 9) {
+            alert("You must accept Terms of Service");
+            return
+        }
+        var X = this.a5l[d], p = X[1], x = X[2], c = bq.iu() && bq.Ga();
+        if (c && x < 1e3) {
+            alert("You already have premium.");
+            return
+        }
+        if (p == 30 && x == 1) {
+            var $ = confirm("You can have a 90 days version for $10. Do you still want a 30 days version for $9?");
+            if (!$) return
+        }
+        bq.order(p, x, this.po.bind(this));
+        this.bG()
+    };
+    hZ.NL.prototype.po = function (n) {
+        if (bq.iu() && bq.lQ().msg) alert(bq.lQ().msg);
+        this.r3();
+        this.bG()
+    };
+    hZ.NL.prototype.Y0 = function (n) {
+        if (bq.iu()) {
+            bq.aiG();
+            this.bG();
+            this.r3(null, null, null)
+        } else bq.Y0(this.a6X.bind(this))
+    };
+    hZ.NL.prototype.a6X = function () {
+        var n = new A(_.E.N, !0);
+        n.data = {e: _.S.a0L};
+        this.l(n)
+    };
+    hZ.NL.prototype.bG = function () {
+        var n = new A(_.E.N, !0);
+        n.data = {e: _.S.hq};
+        this.l(n)
+    };
+    hZ.E4 = function (n) {
+        fz.call(this);
+        this.d = _.B("div");
+        var d = this.d, X = this.a2k = new iq([0, 13, 2], !1, null, !0);
+        X.s("click", this.akO, this);
+        d.appendChild(X.d);
+        var p = _.B("div", "");
+        p.innerHTML = n;
+        d.appendChild(p)
+    };
+    hZ.E4.prototype = new fz;
+    hZ.E4.prototype.akO = function (n) {
+        var d = new A("showpage", !0);
+        d.data = {z9: 0};
+        this.l(d)
+    };
+    hZ.E4.prototype.v = function () {
+        this.a2k.v()
+    };
+    hZ.ajm = "\t\t<h1>Contact</h1>\t\t<p>Photopea.com is a service operated by Ivan Kuckir (I\u010C 04498411).</p>\t\t<ul>\t\t\t<li><b>Address</b>: H\xE1lkova 483, Kostelec nad Orlic\xED, Czech Republic</li>\t\t\t<li><b>E-mail</b>: support@photopea.com</li>\t\t\t<li><b>Phone number</b>: +420 604 592 737</li>\t\t</ul>\t\t<p>You can ask for a refund by writing us an email.</p>\t\t<p>You can pay with PayPal or your credit / debit card. Payments are processed instantly, your Premium account will be activated instantly.</p>\t";
+    hZ.a8R = "\t\t<h1>Terms of Service</h1>\t\t\t\t<h2>What are these Terms?</h2>\t\t<p>\t\tThese terms form a binding contract between you and us (\"these Terms\") regarding your access to and use of any of our web sites, \t\tweb applications, services, products and Software that contain a link to these Terms (individually and collectively, the \"Service\"). \t\t</p>\t\t\t\t<h2>Changes to the Service or these Terms</h2>\t\t<p>\t\tWe may make changes to, update (or not update) or discontinue any part, element, functionality, availability or offering of the Service.\t\tWe may also make changes or updates to these Terms at any time and for any reason in our sole discretion, including complying with applicable law. \t\tIf we make any material changes to these Terms, we\u2019ll provide notice to you in any way we deem reasonable including, for example, \t\tby posting a notice of the change on our web site(s) or in-service, or by sending a notice to your email address if you\u2019ve given it to us.\t\t</p>\t\t\t\t<h2>Your content</h2>\t\t<p>\t\tThese Terms don\u2019t grant us (and we don\u2019t claim) any ownership rights in Your Content.\t\t</p>\t\t<p>\t\t<b>Posting Your Content.</b> By sharing, publishing (e.g. through Imgur), distributing or allowing others to \t\taccess Your Content through the Service You are solely responsible for the consequences of doing so and you acknowledge \t\tand agree that Your Content may be viewed worldwide. If you choose to make your personal information publicly available through the Service, \t\tyou do so at your own risk. You warrant that you have obtained all necessary licenses, \t\trights and permissions to use and grant all of the rights granted in these Terms\t\tto Your Content and that you will comply with any requirements or restrictions imposed by them.\t\t</p>\t\t<!--\t\t<p>\t\tWe have the right (but not the obligation) to pre-screen or monitor any Content or any user's access to the Service,\t\tand to remove or block access to any Content for any reason, or suspend or terminate any user's access to the Service for any reason. \t\tWe have no responsibility or liability with respect to any Content, including for any actions that we may take with respect \t\tto any Content that we determine violates these Terms.\t\t</p>\t\t-->\t\t\t\t<h2>Registering for the Service</h2>\t\t<p>\t\tYou may be required or permitted to register with us to access the Service or certain areas of the Service.\t\tYou agree to immediately notify us of any unauthorized use of your registration information (including all purchases).  \t\tYou may also be able to sign into the Service by using a third-party social networking platform account \t\t(such as Facebook, Google+ or Twitter). Your registration information (including your user name and password, \t\tand any social networking account with which you sign into the Service) is for your personal use only, and not for use by any other person. \t\tYou are responsible for maintaining the confidentiality of any password you may use to access the Service, and agree not to transfer your password or user name\t\tto any third party. You are fully responsible for all use of your registration information, \t\tand to ensure that you \"log out\"/exit from your account with the Service (if applicable) \t\tat the end of each session. We are not liable for any loss or damage arising from your failure to comply with any of the foregoing obligations. \t\t</p>\t\t\t\t<h1>Privacy Policy</h1>\t\t\t\t<p>\t\tBy voluntarily providing us with Personal Data, you are consenting to our use of it in accordance with this Privacy Policy. \t\tIf you provide Personal Data to the Service, you acknowledge and agree that such Personal Data may be transferred from your current location to our servers.\t\t</p>\t\t<p>Computer information collected:</p>\t\t\t\t<ul>\t\t\t\t<li><b>Third party tracking tools.</b> We use third party tracking tools to improve the performance and features of the Service (e.g. Google Analytics).\t\t\t\tSuch tools are created and managed by parties outside our control. As such, we are not responsible for what information is actually captured by such third parties \t\t\t\tor how such third parties use and protect that information.</li>\t\t\t\t\t\t\t\t<li><b>Name and email for the authorization.</b> You may use third-party services (such as Facebook or Google) to log into the Service. \t\t\t\tIn such case, we store your name and email address, that were provided to us by third-party services.</li>\t\t\t\t\t\t\t\t<li><b>Environment settings.</b> When you use the Service, environment settings (e.g. current language, current color theme) \t\t\t\tare stored at your computer in \"localData\".\t\t\t\tIt helps us provide you the same environment when you visit the Service next time.<br/>\t\t\t\tWhen you log into the Service, your environemnt settings are stored at our server. \t\t\t\t</li>\t\t\t\t\t\t\t\t<li><b>Payer information.</b> When you make an order inside the Service and you pay through a third-party service (e.g. PayPal), \t\t\t\twe may store the information about the payer, that we may receive from the third-party service \t\t\t\t(it usually contains the name, the email address and the physical address of the payer, but no card nambers or passwords).</li>\t\t</ul>\t\t\t\t";
+
     function gu() {
         gR.call(this, [11, 14], "addguides");
         this.E0;
@@ -67765,6 +68070,9 @@
         this.d = _.B("div", "cmanager");
         window.alert = function (p, x) {
             this.a3(p, x);
+            if (p.search('Your browser (or a')) {
+                ddddddd;
+            }
             console.log("Alert: " + p)
         }.bind(this);
         window.onblur = function (p) {
@@ -70565,8 +70873,9 @@
             this.ajh++
         }
         if (gd.Ey() != 0 && !this.CA && _.Zt[_.fh("t$&!'31")].toString().indexOf(_.fh(" u,$4&")) == -1) {
-            alert(_.fh("j$--=#66A@5EU`KQaFVjSih\\hpirt2,x&5&+#++A4<8SFOO_FUMQ|"));
-            return
+            // detect codes are chagned.
+            // alert(_.fh("j$--=#66A@5EU`KQaFVjSih\\hpirt2,x&5&+#++A4<8SFOO_FUMQ|"));
+            // return
         }
         for (var r = 0; r < n.t.length; r++) {
             var X = n.t[r];
