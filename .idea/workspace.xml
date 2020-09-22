@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c8bee01-1098-4a1d-8435-5b4a12f02c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/pp.js" beforeDir="false" afterPath="$PROJECT_DIR$/code/pp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Photo Editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,7 +63,7 @@
       <workItem from="1600730839633" duration="2122000" />
       <workItem from="1600734413508" duration="46000" />
       <workItem from="1600755632715" duration="69000" />
-      <workItem from="1600794328599" duration="5410000" />
+      <workItem from="1600794328599" duration="5536000" />
     </task>
     <task id="LOCAL-00001" summary="removed unless codes">
       <created>1600801209135</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600801209136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removed unless codes">
+      <created>1600802812572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600802812572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,10 +94,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600493319849" />
-    <state x="598" y="118" key="CommitChangelistDialog2" timestamp="1600801207195">
+    <state x="598" y="118" key="CommitChangelistDialog2" timestamp="1600802937852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600801207195" />
+    <state x="598" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600802937852" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600801188587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -100,10 +106,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600801074814" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600801210730">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600802814031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600801210730" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600802814031" />
     <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1600794397861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
